@@ -1,0 +1,21 @@
+# URL2WordList
+
+URL2WordList is a command-line tool written in Go that fetches words from one or more URLs, processes the content, and generates a sorted list of words based on occurrence rate. It only considers alphanumeric characters, underscore (_), and hyphen (-) as valid characters in the words.
+
+## Installation
+
+To install URL2WordList, you can use the `go install` command:
+
+```bash
+go install github.com/blinduch/url2wordlist/cmd/url2wordlist
+
+## Usage
+
+To use URL2WordList, simply provide one or more URLs through standard input (stdin), and it will output a list of words sorted by occurrence rate:
+
+```bash
+cat urls.txt | url2wordlist
+
+Replace urls.txt with the file containing the list of URLs you want to process.
+
+
